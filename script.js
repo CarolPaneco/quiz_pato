@@ -54,7 +54,7 @@ const perguntas = [
     texto: "Você se estressa com facilidade?",
     opcoes: [
       { texto: "Porque você está perguntando isso? Eu pareço estressadx? *começa a chorar*", patos: ["Carol"] },
-      { texto: "Para caralho", patos: ["Joao", "Louise"] },
+      { texto: "Para caralho", patos: ["Joao", "Louise", "Wilgner"] },
       { texto: "Digamos que tenho limites", patos: ["Isa", "Vini"] },
       { texto: "Pra me tirar do sério tem que se esforçar muito.", patos: ["Gui", "Ale"] },
       { texto: "Sei que todos estão dando seu melhor nessa vida, eu não me estresso", patos: ["Lauro"] },
@@ -116,7 +116,7 @@ const resultados = {
   },
   "Wilgner": {
     texto: "🛠️ Você é o Wilgner!",
-    imagem: "/wilgner.jpg"
+    imagem: "wilgner.jpg"
   },
   "Vini": {
     texto: "🎭 Você é o Vini!",
