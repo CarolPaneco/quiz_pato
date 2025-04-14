@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quem é você no grupo do pato?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Tela de boas-vindas -->
+  <div id="tela-inicial" class="tela">
+    <h1>🦆 Quem é você no grupo do pato?</h1>
+    <p>Descubra agora qual pato representa você nesse grupo caótico e maravilhoso.</p>
+    <button onclick="comecarQuiz()">Vamos lá!</button>
+  </div>
+
+  <!-- Tela de perguntas -->
+  <div id="tela-perguntas" class="tela escondido">
+    <h2 id="pergunta-texto">Pergunta 1</h2>
+    <div id="opcoes"></div>
+    <button onclick="proximaPergunta()">Próxima</button>
+  </div>
+
+  <!-- Tela de resultado -->
+  <div id="tela-resultado" class="tela escondido">
+    <p id="resultado-texto"></p>
+    <img id="imagem-resultado" class="imagem-flutuante" src="" alt="Imagem do resultado">
+    <button onclick="reiniciarQuiz()">Tentar novamente</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

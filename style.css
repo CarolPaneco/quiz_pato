@@ -1,0 +1,98 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafaa3;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.tela {
+  text-align: center;
+  background-color: #ffef60;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+}
+
+button {
+  background-color: #FBC02D;
+  color: #000;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #FFF9C4;
+}
+
+.escondido {
+  display: none;
+}
+
+#opcoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#opcoes button {
+  background-color: #FFFF8D;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 0.95rem;
+}
+
+#opcoes button:hover {
+  background-color: #FFD700;
+}
+
+.imagem-flutuante {
+  width: 200px;
+  border-radius: 50%;
+  animation: flutuar 3s ease-in-out infinite;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes flutuar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .tela {
+    padding: 20px;
+  }
+
+  .imagem-flutuante {
+    width: 150px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
